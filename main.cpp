@@ -11,7 +11,7 @@ private:
 public:
     AddSpace(const T& r): ref_(r) {}
 
-    friend std::ostream& operator<< (std::ostream &os, AddSpace<T> s) {
+    friend std::ostream& operator<< (std::ostream &os, const AddSpace<T>& s) {
         return os << s.ref_ << ' ';
     }
 };
